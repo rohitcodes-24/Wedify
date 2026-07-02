@@ -1,9 +1,13 @@
+import Hero from "../components/Hero.jsx";
+import WeddingSections from "../components/PopularCategories.jsx";
+
 function Home() {
     return (
         <>
-            <h1> Welcome to Wedify</h1>
+            <Hero />
+            <WeddingSections />
         </>
-    )
-}
+    );
+};
 
 export default Home;
