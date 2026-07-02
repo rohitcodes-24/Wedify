@@ -1,7 +1,21 @@
+import { Routes, Route } from 'react-router-dom';
+
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+
+
 function App() {
   return (
     <>
-    <h1> Welcome to Wedify</h1>
+    {/* Navbar apply on all pages */}
+    <Navbar />
+    <Routes>
+      <Route path ='/' element = {<Home />} />
+    </Routes>
+
+    <Footer />
+    
     </>
   )
 }
